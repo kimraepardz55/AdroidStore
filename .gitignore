@@ -5,3 +5,5 @@ css
 pics
 package-lock.json
 package.json
+# Local Netlify folder
+.netlify
