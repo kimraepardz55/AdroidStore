@@ -55,6 +55,10 @@
                                                             <a href="#!" class="button-collapse" data-activates="mobile-nav">
                                                                       <i class="material-icons">menu</i>
                                                             </a>
+
+                                                            <a href="#!"class="right">
+                                                                <i class="fas fa-heart yellow-text text-lighten-1"></i>
+                                                            </a>
                                                   </div>
                                         </nav>
                               </div>
@@ -216,13 +220,13 @@
                                             <a href="#!"></a>
                                         </li>
 
-                                        <li>
+                                        <!-- <li>
                                             <div class="collapsible-header waves-effect waves-purple">
-                                                <a href="#!" class="yellow-text text-darken-1">My Cart
-                                                    <i class="fas fa-shopping-cart fa-1x"></i>
+                                                <a href="#!" class="yellow-text text-darken-1">My Wishlists
+                                                    <i class="fas fa-heart fa-1x"></i>
                                                 </a>
                                             </div>
-                                        </li>
+                                        </li> -->
 
                                         <li>
                                             <div class="collapsible-header waves-effect waves-purple">
@@ -234,7 +238,7 @@
 
                                         <li>
                                             <div class="collapsible-header waves-effect waves-purple">
-                                                <a href="#!" class="yellow-text text-darken-1">Login Account
+                                                <a href="#modalogin" class="yellow-text text-darken-1 modal-trigger">Login Account
                                                     <i class="fas fa-sign-in-alt fa-1x"></i>
                                                 </a>
                                             </div>
@@ -243,9 +247,15 @@
                     </div>
           </header>
           
-          <section class="section section-about grey darken-4 scrollspy center container"> 
-                <div class="row">
-                    <div class="col s12 m6">
+          <section class="section section-about grey darken-4 center grey-text text-lighten-3 "> 
+
+                <!-- <div class="parallax-container">
+                    <div class="parallax">
+                        <img src="../dist/pics/modern-dark-abstract-background-with-red-light_55870-87.jpg" alt="">
+                    </div>
+                </div> -->
+                <div class="row container">
+                    <!-- <div class="col s12 m6">
                         <div class="card small blue-grey darken-4 white-text">
                             <div class="card-image">
                                 <img src="../dist/pics/skin guns.jpg" alt="" class="responsive-img">
@@ -291,7 +301,41 @@
                             </div>
                             
                         </div>
+                    </div> -->
+                    
+                    <h5 class="white-text">ABOUT US</h5>
+
+                    <br>
+                    <div class="col s12">
+                        <div class="card-panel transparent z-depth-3">
+                            <i class="fas fa-shopping-cart yellow-text fa-2x"></i>
+                            <p class="flow-text">Easy to buy</p>
+                            <p class="main-text">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugit?"
+                            </p>
+                        </div>
                     </div>
+
+                    <div class="col s12">
+                        <div class="card-panel transparent z-depth-3">
+                            <i class="fas fa-coins yellow-text fa-2x"></i>
+                            <p class="flow-text">Easy to convert</p>
+                            <p class="main-text">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugit?"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col s12">
+                        <div class="card-panel transparent z-depth-3">
+                            <i class="fas fa-star yellow-text fa-2x"></i>
+                            <p class="flow-text">Easy to receive</p>
+                            <p class="main-text">
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugit?"
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
           </section>
 
@@ -890,10 +934,30 @@
   
                       </div>
                   </div>
+
+                  <div class="col s6 m4">
+                        <div class="card small">
+                            <div class="card-image">
+                                <img src="/dist/pics/lightborn.jpg" alt="" class="responsive-img">
+                            </div>
+
+                            <div class="card-content">
+                            <p class="truncate"><i class="fas fa-coins fa-1x yellow-text text-darken-2"></i>: 5000 GC</p>
+                            
+                            <a href="#!" class="blue-text">Lightborn Skins Bundle</a>
+
+                            </div>
+
+                            <div class="card-action">
+                                <a href="#!" class="btn col s12 m12 purple darken-4 waves-effect waves-red">BUY THIS</a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </section>
 
-          <section class="section section-latestvid grey darken-3 grey-text text-lighten-4">
+          <section class="section section-latestvid grey darken-3 grey-text text-lighten-4 hide-on-small-and-down">
                 <div class="container">
                     <div class="row">
                         <p class="flow-text center">THE LATEST UPDATES FOR YOU</p>
@@ -1032,6 +1096,44 @@
                 </div>
           </footer>
 
+          <!-- MODALS -->
+
+          <!-- FOR LOGIN -->
+
+          <div class="modal grey darken-4 grey-text text-lighten-3" id="modalogin">
+            <div class="modal-content center container">
+                <p class="flow-text">SIGN IN PROCESS</p>
+               <form action="index.html">
+                    <div class="input-field">
+                        <input type="text" id="usern" autocomplete="off">
+                        <label for="usern" class="grey-text text-lighten-2">Enter Username</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" id="pass">
+                        <label for="pass" class="grey-text text-lighten-2">Enter Password</label>
+                    </div>
+
+                    <p>
+                        <input type="checkbox" id="rem">
+                        <label for="rem">Remember Me</label>
+                    </p>
+
+                   <div class="input-field grey-text text-lighten-1">
+                    <p>Don't have an account? <a href="#!">SIGN UP</a></p>
+                   </div>
+
+                   <div class="input-field grey-text text-lighten-1">
+                    <p>Forgot your account? <a href="#!">Retrieve Account</a></p>
+                   </div>
+
+                    <div class="input-field row">
+                        <button type="submit" class="btn col s12 purple darken-4 waves-effect waves-red">LOGIN</button>
+                    </div>
+               </form>
+            </div>
+          </div>
+
           <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
           <script src="../dist/js/materialize.min.js"></script>
           <script src="/dist/js/index.js"></script>
@@ -1058,6 +1160,10 @@
                               $('.carousel').carousel({
                                   indicators: false
                               });
+
+                              $('.parallax').parallax();
+
+                              $('.modal').modal();
                     });
           </script>
 </body>
