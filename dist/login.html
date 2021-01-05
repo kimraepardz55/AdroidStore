@@ -15,7 +15,7 @@
           <!-- FONT AWESOME CDN -->
           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
-<body class="grey darken-4">
+<body class="grey darken-4 hide-on-large-only">
 
           <header class="main-header">
                     <div class="primary-overlay">
@@ -275,13 +275,26 @@
                               </ul>
                     </div>
           </header>
-
+          <br>
           <section class="section-loginbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col l12">
-                        <div class="card large">
+            <div class="row">
+                <div class="col s12 m12">
+                    <div class="card medium grey darken-3 grey-text text-lighten-2">
+                        <br>
+                        <h5 class="center">SIGN IN PROCESS</h5>
+                        <br>
+                        <div class="row">
+                            <div class="container">
+                                <div class="input-field">
+                                    <input type="text" id="usern">
+                                    <label for="usern">Enter Username</label>
+                                </div>
 
+                                <div class="input-field">
+                                    <input type="password" id="passn">
+                                    <label for="passn">Enter Password</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -295,6 +308,8 @@
           <script>
 
               $(document).ready(function(){
+
+                $('.button-collapse').sideNav();
 
                 $('.dropdown-button').dropdown({
                     constrainWidth: false,

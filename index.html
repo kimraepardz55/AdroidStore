@@ -154,7 +154,7 @@
                                                                 </li>
 
                                                                 <li>
-                                                                    <a href="/dist/login.html" class="yellow-text text-darken-2 tooltipped"  data-tooltip="Login Account" data-delay="100">
+                                                                    <a href="#modalogin" class="yellow-text text-darken-2 tooltipped modal-trigger"  data-tooltip="Login Account" data-delay="100">
                                                                         <i class="fas fa-sign-in-alt"></i>
                                                                     </a>
                                                                 </li>
@@ -1271,6 +1271,7 @@
             <div class="modal-content center container">
                 <p class="flow-text">SIGN IN PROCESS</p>
                <form action="index.html">
+
                     <div class="input-field">
                         <input type="text" id="usern" autocomplete="off">
                         <label for="usern" class="grey-text text-lighten-2">Enter Username</label>
@@ -1280,19 +1281,40 @@
                         <input type="password" id="pass">
                         <label for="pass" class="grey-text text-lighten-2">Enter Password</label>
                     </div>
+                    
+                    <div class="row">
+                        <div class="col l9">
+                            <p>
+                                <input type="checkbox" id="rem">
+                                <label for="rem">Remember Me</label>
+                            </p>
+                        </div>
 
-                    <p>
-                        <input type="checkbox" id="rem">
-                        <label for="rem">Remember Me</label>
-                    </p>
+                        <div class="col l1">
+                           <p>
+                            <a href="/dist/register.html" class="tooltipped" data-position="top" data-tooltip="New Account" data-delay="100">
+                                <i class="fas fa-plus yellow-text text-darken-3 fa-1x"></i>
+                            </a>
+                           </p>
+                        </div>
 
-                   <div class="input-field grey-text text-lighten-1">
+                        <div class="col l1">
+                            <p>
+                                <a href="#!" class="tooltipped" data-position="top" data-delay="100" data-tooltip="Retrive Account">
+                                    <i class="fas fa-unlock-alt yellow-text text-darken-3 fa-1x"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+ 
+                   <!-- <div class="input-field grey-text text-lighten-1">
                     <p>Don't have an account? <a href="#!">SIGN UP</a></p>
                    </div>
 
                    <div class="input-field grey-text text-lighten-1">
                     <p>Forgot your account? <a href="#!">Retrieve Account</a></p>
-                   </div>
+                   </div> -->
 
                     <div class="input-field row">
                         <button type="submit" class="btn col s12 purple darken-4 waves-effect waves-red">LOGIN</button>
