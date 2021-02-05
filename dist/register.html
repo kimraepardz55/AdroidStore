@@ -43,13 +43,13 @@
                                                             <ul class="right hide-on-med-and-down">
                                                                
                                                                 <li>
-                                                                    <a href="#!" class="yellow-text text-darken-2 tooltipped" data-tooltip="Register" data-delay="100">
-                                                                        <i class="fas fa-plus"></i>
+                                                                    <a href="#modalconfirm" class="yellow-text text-darken-2 tooltipped modal-trigger" data-tooltip="Back to Login" data-delay="100">
+                                                                        <i class="fas fa-sign-in-alt"></i>
                                                                     </a>
                                                                 </li>
 
                                                                 <li>
-                                                                    <a href="/dist/login.html" class="yellow-text text-darken-2 tooltipped"  data-tooltip="Retrive Account" data-delay="100">
+                                                                    <a href="" class="yellow-text text-darken-2 tooltipped"  data-tooltip="Retrive Account" data-delay="100">
                                                                         <i class="fas fa-unlock-alt"></i>
                                                                     </a>
                                                                 </li>
@@ -109,10 +109,10 @@
                               <div class="row">
                                         <div class="col s12 m12 l10 offset-l1">
                                                   <div class="card transparent z-depth-2">
-                                                            <div class="col l3 grey darken-4 hide-on-med-and-down" style="position:relative;height: 100vh;">
-                                                                
+                                                            <div class="col m3 l4 hide-on-med-and-down">
+                                                                <img src="pics/sidebg2.jpg" alt="sidebg2" class="sidebg">
                                                             </div>
-                                                            <div class="col s12 m12 l9">
+                                                            <div class="col s12 m10 offset-m1 l8">
                                                                       <div class="card-content grey-text text-lighten-1">
                                                                                 <br>
                                                                                 <span class="card-title">REGISTRATION</span>
@@ -175,17 +175,15 @@
 
                                                                                 <div class="row">
                                                                                     <div class="col s12 m12 l12">
-                                                                                        <a href="#!" class="btn col s9 m9 l8 btnregister waves-effect waves-red">REGISTER</a>
+                                                                                        <a href="#!" class="btn col s10 m10 l10 btnregister waves-effect waves-red ">REGISTER</a>
                                                                                     </div>
                                                                                 </div>
 
                                                                                 <div class="row">
                                                                                     <div class="col s12 m12 l12">
-                                                                                        <a href="#!" class="btn col s7 m7 l5 waves-effect waves-red btncancel">CANCEL</a>
+                                                                                        <a href="#modalconfirm" class="btn col s8 m8 l8 waves-effect waves-red btncancel modal-trigger">CANCEL</a>
                                                                                     </div>
                                                                                 </div>
-
-                                                        
                                                                       </div>
                                                             </div>
                                                   </div>
@@ -194,14 +192,39 @@
                     </div>
           </section>
 
-          <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-          <!-- <script src="js/index.js"></script> -->
-          <script src="js/materialize.min.js"></script>
+          <!-- MODAL CONFIRM IF CLICK CANCEL -->
 
-          <script src="js/register.js"></script>
+          <div class="modal grey darken-4" id="modalconfirm">
+              <div class="modal-content">
+                  <div class="container">
+                    <p class="white-text">You're still registering your account, you wish to cancel?</p>
+                  </div>
+              </div>
+
+              <div class="modal-footer blue-grey lighten-4">
+                  <div class="container">
+                      <a href="/dist/login.html" class="btn-flat waves-effect waves-red">YES</a>
+                      <a href="#!" class="btn red darken-2 waves-effect waves-purple modal-action modal-close">NO</a>
+                  </div>
+              </div>
+          </div>
+
+    
+          <!-- <script src="js/register.js"></script> -->
+          <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+          <script type="text/javascript" src="js/materialize.min.js"></script>
+          <!-- <script src="js/index.js"></script> -->
+
+        
           <script>
                     $(document).ready(function(){
                               $('.button-collapse').sideNav();
+                              
+                              $('.modal').modal({
+                                  dismissible: true,
+                                  inDuration: 300,
+                                  outDuration: 200
+                              });
                     });
           </script>
 
