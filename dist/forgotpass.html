@@ -75,14 +75,16 @@
                                         
                                         <li>
                                                   <div class="collapsible-header waves-effect waves-purple">
-                                                        <a href="../index.html" class="black-text">Home</a>
+                                                        <a href="../index.html" class="black-text">Home
+                                                            <i class="fas fa-home fa-1x left"></i>
+                                                        </a>
                                                   </div>
                                         </li>
 
                                         <li>
                                             <div class="collapsible-header waves-effect waves-purple">
                                                 <a href="#!" class="black-text">My GameCoins
-                                                    <i class="fas fa-coins fa-1x"></i>
+                                                    <i class="fas fa-coins fa-1x left"></i>
                                                 </a>
                                             </div>
                                         </li>
@@ -90,7 +92,7 @@
                                         <li>
                                             <div class="collapsible-header waves-effect waves-purple">
                                                 <a href="/dist/login.html" class="black-text">Login Account
-                                                    <i class="fas fa-sign-in-alt fa-1x"></i>
+                                                    <i class="fas fa-sign-in-alt fa-1x left"></i>
                                                 </a>
                                             </div>
                                         </li>
@@ -108,5 +110,11 @@
 
           <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
           <script type="text/javascript" src="js/materialize.min.js"></script>
+
+          <script>
+                    $(document).ready(function() {
+                              $('.button-collapse').sideNav();
+                    });
+          </script>
 </body>
 </html>
