@@ -99,16 +99,123 @@
           </header>
 
           <section class="section section-forgotpass">
-                    <div class="col s12 m10 offset-m1 l10">
-                              <div class="card transparent">
-                                        <div class="card-content">
-                                                  <span class="card0-title">Retrieve your account</span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12 m12 l10 offset-l1">
+                                <div class="card transparent z-depth-2 grey-text text-lighten-4">
+                                    <div class="col s1 m1 l3 sidestep">
+                                        <div class="front grey darken-4 hide-on-med-and-down">
+                                            <div class="row">
+                                                <div class="center">
+                                                    <div class="btn btn-floating btn-large purple darken-2">1</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="center">
+                                                    <div class="btn btn-floating btn-large purple darken-2">2</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="center">
+                                                    <div class="btn btn-floating btn-large purple darken-2">3</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="center">
+                                                    <div class="btn btn-floating btn-large purple darken-2">4</div>
+                                                </div>
+                                            </div>
+                                    
                                         </div>
-                              </div>
+                                    </div>
+                                    <div class="col s11 m11 l9">
+                                        <div class="card-content">
+                                            <span class="card-title truncate">RETRIEVE ACCOUNT</span>
+                                            <p class="main-text">Enter your current email or mobile no. to receive the code.</p>
+                                        </div>
+<!-- 
+                                        <div class="card-content">
+                                            <div class="row">
+                                                <div class="col s3">
+                                                    <a href="#!" class="btn btn-floating purple">1</a>
+                                                </div>
+
+                                                <div class="col s3">
+                                                    <a href="#!" class="btn btn-floating purple ">2</a>
+                                                </div>
+
+                                                <div class="col s3">
+                                                    <a href="#!" class="btn btn-floating purple">3</a>
+                                                </div>
+
+                                                <div class="col s3">
+                                                    <a href="#!" class="btn btn-floating purple">4</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                        <div class="card-tabs ">
+                                            <ul class="tabs tabs-fixed-width transparent">
+                                                <li class="tab">
+                                                    <a href="#emailtab" class="truncate">Email Address</a>
+                                                </li>
+
+                                                <li class="tab">
+                                                    <a href="#mobiletab" class="truncate">Mobile No.</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="card-content" id="emailtab">
+                                            <div class="input-field">
+                                                <input type="text" id="retriemail" autocomplete="off">
+                                                <label for="retriemail">Enter email address</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-content" id="mobiletab">
+                                            <div class="input-field">
+                                                <input type="number" id="retrimobile" autocomplete="off">
+                                                <label for="retrimobile">Enter mobile no.</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-content">
+                                            <p>
+                                                <input type="checkbox" id="rem">
+                                                <label for="rem">I am not a robot</label>
+                                            </p>
+                                        </div>
+
+                                        <div class="card-action">
+                                            <div class="row">
+                                                <a href="#!" class="btn col l9 s9 m9 btnlogin truncate">GET THE VER. CODE</a>
+                                            </div>
+
+                                            <div class="row">
+                                                <a href="#!" class="btn col l7 s7 m7 red darken-4 truncate">BACK TO LOGIN</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
           </section>
 
           <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
           <script type="text/javascript" src="js/materialize.min.js"></script>
+
+          <script>
+
+              $(document).ready(function() {
+
+                  $('.button-collapse').sideNav();
+
+              });
+          </script>
 </body>
 </html>
