@@ -101,87 +101,103 @@
           <section class="section section-forgotpass">
                     <div class="container">
                         <div class="row">
-                            <div class="col s12 m12 l8 offset-l2">
-                                <div class="card transparent z-depth-2 grey-text text-lighten-4">
-                                    <!-- <div class="col l4 sidestep hide-on-med-and-down">
-                                        <div class="row">
-                                            <div class="center">
-                                                <div class="btn btn-floating btn-large pink lighten-2 black-text pulse">1</div>
-                                            </div>
-                                        </div>
+                            <div class="col s12 m10 offset-m1 l8 offset-l2">
+                                <div class="card large transparent z-depth-4 grey-text text-lighten-4">
+                                   <div class="col m1 l1">
+                                   </div>
 
-                                        <div class="row">
-                                            <div class="center">
-                                                <div class="btn btn-floating btn-large purple darken-2">2</div>
+                                   <div class="col s12 m11 l11">
+                                        <div class="titleslot">
+                                            <div class="card-content">
+                                                <span class="card-title">FORGOT PASSWORD</span>
+                                                <p class="main-text">Enter your email/ mobile no. to receive the code</p>
                                             </div>
                                         </div>
-
-                                        <div class="row">
-                                            <div class="center">
-                                                <div class="btn btn-floating btn-large purple darken-2">3</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="center">
-                                                <div class="btn btn-floating btn-large purple darken-2">4</div>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                    
-                                    <div class="col s12 m10 offset-m1 l10 offset-l1">
                                         
-                                        <div class="card-content">
-                                            <br>
-                                            <span class="card-title truncate">RETRIEVE ACCOUNT</span>
-                                            <p class="main-text truncate">Enter your current email or mobile no. to receive the code.</p>
-                                        </div>
-
-                                        <div class="card-tabs">
-                                            <ul class="tabs tabs-fixed-width transparent">
-                                                <li class="tab">
-                                                    <a href="#emailtab" class="truncate">Email Address</a>
-                                                </li>
-
-                                                <li class="tab">
-                                                    <a href="#mobiletab" class="truncate">Mobile No.</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="card-content">
-                                            <div id="emailtab">
-                                                <div class="input-field">
-                                                    <input type="text" id="retriemail" autocomplete="off">
-                                                    <label for="retriemail">Enter email address</label>
+                                        <div class="slot1">
+                                            <div class="card-tabs">
+                                                <ul class="tabs tabs-fixed-width transparent">
+                                                    <li class="tab">
+                                                        <a href="#emailtab">Email Address</a>
+                                                    </li>
+    
+                                                    <li class="tab">
+                                                        <a href="#numbertab">Mobile No.</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+    
+                                            <div class="card-content">
+                                                <div id="emailtab">
+                                                    <small class="yellow-text">*TAKE NOTE: Need your current email address</small>
+                                                    <div class="input-field">
+                                                        <input type="text" id="emailadd" placeholder="ex. kimraepardz@gmail.com">
+                                                    </div>
+                                                </div>
+    
+                                                <div id="numbertab">
+                                                    <small class="yellow-text">*TAKE NOTE: Need your current mobile no.</small>
+                                                    <div class="input-field">
+                                                        <input type="number" id="mobileno" placeholder="ex. 09991234567">
+                                                    </div>
                                                 </div>
                                             </div>
 
-                                            <div id="mobiletab">
+                                            <div class="card-action">
+                                                <a href="#!" class="btn col s12 m12 l11 offset-l1 btnlogin butt1">CONTINUE</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="slot2 hide-on-large-only hide-on-med-and-down">
+                                            <div class="card-content">
+                                                <small class="yellow-text">*The code has been sent to your email now. Please check and enter here before 1 minute. </small>
                                                 <div class="input-field">
-                                                    <input type="number" id="retrimobile" autocomplete="off">
-                                                    <label for="retrimobile">Enter mobile no.</label>
+                                                    <input type="number" id="verifycode" placeholder="Enter the 7-digit code here">
                                                 </div>
+
+                                                <p class="yellow-text text-lighten-3">Didn't receive the code yet? <a href="#!">Resend now</a></p>
+                                            </div>
+
+                                            <div class="card-action">
+                                                <a href="#!" class="btn col s12 m11 offset-m1 l11 offset-l1 btnlogin butt2">VERIFY THE CODE</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="slot3 hide-on-large-only hide-on-med-and-down">
+                                            <div class="card-content">
+                                                <small class="yellow-text">*Your password must start with <u>Uppercase</u> & have a <u>numbers</u></small>
+                                                <div class="input-field">
+                                                    <input type="password" id="newpass" class="yellow-text text-lighten-3">
+                                                    <label for="newpass">New Password</label>
+                                                </div>
+
+                                                <div class="input-field">
+                                                    <input type="password" id="conpass" class="yellow-text text-lighten-3">
+                                                    <label for="conpass">Confirm Password</label>
+                                                </div>
+                                                <br>
+                                                <p>
+                                                    <input type="checkbox" id="rem">
+                                                    <label for="rem">I am not a robot</label>
+                                                </p>
+                                            </div>
+
+                                            <div class="card-action">
+                                                <a href="#!" class="btn col s12 m11 offset-m1 l11 offset-l1 btnlogin butt3">SAVE PASSWORD</a>
                                             </div>
                                         </div>
 
-                                        <div class="card-content">
-                                            <p>
-                                                <input type="checkbox" id="rem">
-                                                <label for="rem">I am not a robot</label>
-                                            </p>
-                                        </div>
-
-                                        <div class="card-content">
-                                            <div class="row">
-                                                <a href="#!" class="btn col l9 s9 m9 btnlogin truncate">GET THE VER. CODE</a>
+                                        <div class="slot4 hide-on-large-only hide-on-med-and-down">
+                                            <div class="card-content center">
+                                                <p class="flow-text">THE PASSWORD YOU CHANGE HAS BEEN SAVED</p>
+                                                
                                             </div>
 
-                                            <div class="row">
-                                                <a href="#!" class="btn col l7 s7 m7 red darken-4 truncate">BACK TO LOGIN</a>
+                                            <div class="card-action">
+                                                <a href="login.html" class="btn col s12 m11 offset-m1 l11 offset-l1 green darken-4">LOGIN NOW</a>
                                             </div>
                                         </div>
-                                    </div>
+                                   </div>
                                 </div>
                             </div>
                         </div>
@@ -190,6 +206,7 @@
 
           <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
           <script type="text/javascript" src="js/materialize.min.js"></script>
+          <script src="js/forgotpass.js"></script>
 
           <script>
 
